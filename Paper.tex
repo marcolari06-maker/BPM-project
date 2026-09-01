@@ -1,0 +1,315 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+% --- COLOR PALETTE ---
+\definecolor{navyblue}{RGB}{20, 45, 85}
+\definecolor{tealblue}{RGB}{30, 115, 140}
+\definecolor{lightgrey}{RGB}{245, 247, 250}
+\definecolor{darkgrey}{RGB}{60, 60, 60}
+
+% --- SETUP HYPERREF ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navyblue,
+    urlcolor=tealblue,
+    pdftitle={Documentazione Progetto AI Maintenance - Business & Project Management},
+    pdfauthor={Gruppo di Progetto}
+}
+
+% --- SETUP HEADERS & FOOTERS ---
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\small Pagina \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- SECTION STYLING ---
+\titleformat{\section}
+  {\color{navyblue}\normalfont\large\bfseries}
+  {\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}
+  {\color{tealblue}\normalfont\bfseries}
+  {\thesubsection}{1em}{}
+
+% --- DOCUMENT BEGIN ---
+\begin{document}
+
+% --- TITLE PAGE ---
+\begin{titlepage}
+    \centering
+    
+    \begin{center}
+        \includegraphics[width=8cm]{../UNIVERSALIMAGES/logounipi.png}
+    \end{center}
+    
+    \vspace{0.5cm}
+    {\huge \color{tealblue} UNIVERSITÀ DI PISA}\\[0.5cm]
+    {\Large \color{navyblue} Dipartimento di ingegneria dell'informazione}\\[0.8cm]
+    {\large \color{navyblue} Master's degree in Artificial Intelligence and data engineering}\\[1.5cm]
+
+    {\LARGE \bfseries \color{tealblue} Smart maintenance for automotive businesses}\\[2cm]
+    
+    \vspace{1.5cm}
+    \rule{\linewidth}{0.8pt}
+    \vspace{2.5cm}
+    
+    \begin{minipage}{0.48\textwidth}
+        \begin{flushleft} \large
+            \textbf{Corso:} Business and Project Management\\
+            \textbf{Ambito:} AI-Driven Business Venture\\
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \begin{flushright} \large
+            \textbf{Autori:} [Marco Lari, Tommaso Pellegrini]\\
+            \textbf{Anno accademico:} 2025/2026
+        \end{flushright}
+    \end{minipage}
+    \vspace{0.5cm}
+
+    \begin{center} Gitub Repository: \url{https://github.com/marcolari06-maker/BPM-project} \end{center}
+
+    \newpage
+    
+    \vfill
+    
+    \begin{abstract}
+        \noindent In this short paper we present how we intend to organize an AI driven startup in the automotive sector, defining the problem we mean to address and the solutions provided. Furthermore we provide a competitor analysis, a business model canvas, a market estimation and a negative backstacking; evaluating the quality of our own project model.
+    \end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% --- SECTION 0: RATIONALE ---
+\section{Introduction to the Problem}
+
+\noindent The problem addressed in this paper refers to the inefficiencies and consequent high costs of vehicle maintenance in automotive companies,
+such as transportation, logistic and rental businesses.
+\subsection*{Problems}
+\begin{itemize}
+    \item High maintenance costs
+    \item Downtime and overhead of maintenance work
+    \item Parts reperability issues.
+\end{itemize}
+
+\subsection*{Drivers}
+\begin{itemize}
+    \item Unexpected failures of critical components (engine, battery pack, transmission). Companies can't predict failures and are forced to wait for them to happen before taking action.
+    \item Unnecessary repairs or replacements to maintain security standard due to lack of predictive maintenance, which leads to periodic schedules or over-maintenance.
+\end{itemize}
+
+\noindent Given the above problems and drivers, we aim to provide a solution based on a machine learning model that enables to treat
+such matters with statistical evidence, such that overhead is reduced due to prediction of failures and costs are reduced with
+reduction on unnecessary maintenance work.
+\noindent A machine learning approach is suitable for this kind of problem because unlike fixed rules, heuristic or treshold based approaches, it can learn patterns from data to adapt to situations without the need to make rules for every possible scenario.
+\noindent Furthermore it makes the system much more adaptive and scalable, since it can be continuously improved with the collected data, and the data income comes with the normal operation of the vechicles.
+\newline\newline
+\noindent This kind of approach is innovative in small automotive companies, since is usually adopted as an internal solution by
+larger automotive companies, such as OEMs and Tier 1 suppliers. Instead we aim to provide a B2B service that can be adopted by 
+smaller realities, such as logistic companies, rental companies and small fleet owners.
+\begin{itemize}
+    \item Small companies don't have the resources to develop such a system internally.
+    \item Previous solutions are heavy on the budget and could be threatening for a upcoming business.
+\end{itemize}
+Instead in the proposed solution:
+\begin{itemize}
+    \item The system is provided as a service, with a subscription model, such that the company can pay for the service without having to develop it internally.
+    \item The system is designed to be lightweight and easy to integrate with existing systems, such that it can be adopted without major changes to the existing infrastructure.
+    \item Even with the cost of the service the overall cost of maintenance is expected to be lower than the current cost, due to the reduction of downtime and unnecessary maintenance work.
+\end{itemize}
+\subsection*{Assumptioin}
+The most critical assumption of this project is that companies are willing to share their data, to implement the system.
+\noindent Instead regardin data for training the model, we assume that we can rely on open datasets.
+
+\subsection{Triangolazione delle Fonti Informative}
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\linewidth}{l X}
+\toprule
+\textbf{Tipologia Fonte} & \textbf{Esempi Utilizzati} \\
+\toprule
+\textbf{Fonti Formali} & Brevetti proprietari, normative UE, registri marchi. \\
+\midrule
+\textbf{Fonti Informali \& Open} & Datasets pubblici (es. NASA Turbofan, dati diagnostici open), feedback flotte. \\
+\midrule
+\textbf{Market Intelligence} & Report di settore (Gartner, McKinsey Automotive), dati finanziari competitor. \\
+\bottomrule
+\end{tabularx}
+\caption{Matrice di triangolazione delle fonti per l'analisi evidenziata.}
+\end{table}
+
+% --- SECTION 1: PROBLEM / SOLUTION FIT ---
+\section{Struttura 1 -- Problem/Solution \& Product-Market Fit}
+
+\subsection{Definizione del Problema (The Unmet Need)}
+\begin{itemize}
+    \item \textbf{Target del Problema:} Gestori di flotte commerciali, OEM e proprietari individuali di veicoli[cite: 1].
+    \item \textbf{Punto Critico (Pain Point):} Guasti imprevisti del motore o del pacco batterie con conseguenti fermi macchina costosi[cite: 1].
+    \item \textbf{Limiti delle Soluzioni Attuali:} La manutenzione preventiva a chilometraggio fisso sostituisce componenti ancora funzionanti o interviene troppo tardi su componenti difettosi[cite: 1].
+\end{itemize}
+
+\subsection{Soluzione Abilitata dall'Intelligenza Artificiale}
+\begin{itemize}
+    \item Algoritmi di Machine Learning (Anomaly Detection, Time-Series Forecasting, LSTM/Transformer) per stima della vita utile residua (\textit{Remaining Useful Life - RUL})[cite: 1].
+    \item Scalabilità del modello tramite Edge-to-Cloud Analytics: elaborazione primaria a bordo veicolo e analisi predittiva complessa in cloud[cite: 1].
+\end{itemize}
+
+\subsection{Raggiungimento del Product-Market Fit}
+\begin{itemize}
+    \item Definizione delle proposizioni di valore differenziate per segmenti B2B (flotte) e B2B2C (OEM/Assicurazioni)[cite: 1].
+    \item Evidenza della convenienza economica: riduzione dei downtime stimata del 30--40\% rispetto ai competitor tradizionali[cite: 1].
+\end{itemize}
+
+% --- SECTION 2: COMPETITION ANALYSIS ---
+\section{Struttura 2 -- Analisi della Concorrenza e Posizionamento Strategico}
+
+\subsection{Mappatura dei Concorrenti}
+\begin{itemize}
+    \item \textbf{Competitor Diretti:} Startup di AI telematics (es. Stratio, Pitstop)[cite: 1].
+    \item \textbf{Incumbent / OEM:} Soluzioni proprietarie dei produttori di veicoli (Bosch Mobility, Continental Diagnostics)[cite: 1].
+    \item \textbf{Soluzioni Sostitutive:} Metodi tradizionali di ispezione manuale in officina ed garanzie estese senza diagnostica predittiva[cite: 1].
+\end{itemize}
+
+\subsection{Matrice di Valutazione dei Competitor}
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\linewidth}{X l c c c}
+\toprule
+\textbf{Competitor} & \textbf{Tipo} & \textbf{Precisione AI} & \textbf{Facilità Integrazione} & \textbf{Conformità Normativa} \\
+\toprule
+Competitor A & Startup & Alta & Media & Media \\
+Competitor B & OEM Incumbent & Media & Bassa (Proprietaria) & Alta \\
+Nostra Venture & AI-Driven Venture & Molto Alta & Alta (API Open) & Alta (EU AI Act Compliance) \\
+\bottomrule
+\end{tabularx}
+\caption{Analisi comparativa del posizionamento competitivo.}
+\end{table}
+
+\subsection{Strategia di Differenziazione}
+\begin{itemize}
+    \item Vantaggio su modelli proprietari di predizione guasti basati su federated learning[cite: 1].
+    \item Architettura conforme ai requisiti dell'EU AI Act per i sistemi ad alto rischio/automotive[cite: 1].
+\end{itemize}
+
+% --- SECTION 3: BUSINESS MODEL CANVAS ---
+\section{Struttura 3 -- Business Model Canvas \& AI Assets}
+
+\subsection{Componenti del Business Model Canvas (BMC)}
+\begin{description}
+    \item[Customer Segments:] Gestori di flotte di veicoli commerciali, Aziende di Noleggio, OEM Automotive[cite: 1].
+    \item[Value Propositions:] Azzeramento dei fermi macchina non pianificati, riduzione del TCO (Total Cost of Ownership), ottimizzazione della pianificazione delle officine[cite: 1].
+    \item[Channels:] Vendita diretta B2B, Integrazione API con gestionali di flotta aziendali, Marketplace automotive[cite: 1].
+    \item[Revenue Streams:] Abbonamento SaaS per veicolo/mese, Modello di rev-share sui risparmi generati dal downtime evitato[cite: 1].
+    \item[Cost Structure:] Costi di infrastruttura cloud/compute, Ricerca e Sviluppo AI, conformità regolatoria e acquisizione dati[cite: 1].
+\end{description}
+
+\subsection{Focus sugli Asset AI}
+\begin{itemize}
+    \item \textbf{Data Infrastructure:} Pipeline di ingestione dati telemetrici ad altissimo throughput[cite: 1].
+    \item \textbf{Model Layer:} Modelli pre-addestrati di pattern-recognition guasti[cite: 1].
+    \item \textbf{Compute Infrastructure:} Addestramento distribuito ed edge computing di bordo[cite: 1].
+\end{itemize}
+
+% --- SECTION 4: MARKET ESTIMATION ---
+\section{Struttura 4 -- Stima del Mercato (TAM, SAM, SOM)}
+
+\subsection{Metodologia di Stima (Top-Down / Bottom-Up)}
+\begin{itemize}
+    \item \textbf{TAM (Total Addressable Market):} Mercato globale della telematica e manutenzione automotive[cite: 1].
+    \item \textbf{SAM (Serviceable Addressable Market):} Mercato delle flotte connesse commerciali in Europa/Nord America[cite: 1].
+    \item \textbf{SOM (Serviceable Obtainable Market):} Quota di mercato raggiungibile nei primi 3--5 anni di operatività[cite: 1].
+\end{itemize}
+
+\subsection{Dimensionamento Economico}
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l r}
+\toprule
+\textbf{Livello di Mercato} & \textbf{Perimetro} & \textbf{Valore Stimato (€)} \\
+\toprule
+\textbf{TAM} & Globale Automotive Analytics & € 45,000,000,000 \\
+\textbf{SAM} & Flotte connesse Europa & € 8,500,000,000 \\
+\textbf{SOM} & Flotte commerciali Target (Y1-Y3) & € 250,000,000 \\
+\bottomrule
+\end{tabular}
+\caption{Scomposizione e stima quantitativa del mercato target.}
+\end{table}
+
+% --- SECTION 5: PERSONAS & VALIDATION STRATEGY ---
+\section{Struttura 5 -- User Personas \& Strategia di Validazione}
+
+\subsection{Definizione delle User Personas}
+\begin{enumerate}
+    \item \textbf{Persona 1: Fleet Manager (B2B User)}
+    \begin{itemize}
+        \item \textit{Ruolo:} Responsabile operatività e costi della flotta[cite: 1].
+        \item \textit{Obiettivo:} Massimizzare l'indice di utilizzo dei veicoli ed eliminare i ritardi nelle consegne[cite: 1].
+        \item \textit{Frustrazione:} Costi improvvisi e non preventivati per riparazioni urgenti[cite: 1].
+    \end{itemize}
+    \item \textbf{Persona 2: Chief Maintenance Officer OEM (B2B Partner)}
+    \begin{itemize}
+        \item \textit{Ruolo:} Gestore garanzie e post-vendita della casa madre[cite: 1].
+        \item \textit{Obiettivo:} Raccogliere dati reali sui guasti per migliorare la progettazione futura[cite: 1].
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Strategia di Validazione sul Mercato}
+\begin{itemize}
+    \item \textbf{Interviste e Survey qualitative:} Validazione delle ipotesi di pain point con 30+ fleet manager[cite: 1].
+    \item \textbf{Minimum Viable Product (MVP):} Dashboard di analisi predittiva offline alimentata da log storici di telemetria[cite: 1].
+    \item \textbf{Progetti Pilota (Pilot Projects):} PoC (Proof of Concept) di 6 mesi su una flotta pilota di 500 veicoli per misurare l'accuratezza dei preavvisi di guasto[cite: 1].
+\end{itemize}
+
+% --- SECTION 6: NEGATIVE BACKCASTING & RISK ANALYSIS ---
+\section{Struttura 6 -- Failure Analysis \& Mitigazione del Rischio}
+
+\subsection{Metodologia di Negative Backcasting}
+\textit{Assunzione di partenza: Il progetto è fallito catastroficamente entro 3 anni dal lancio. Si ripercorrono le cause a ritroso[cite: 1].}
+
+\subsection{Mappatura dei Rischi e Cause di Fallimento}
+\begin{itemize}
+    \item \textbf{Rischio Tecnologico/AI:} High False Positive Rate (troppi allarmi ingiustificati che portano alla perdita di fiducia da parte degli utenti)[cite: 1].
+    \item \textbf{Rischio di Mercato:} Bassa adozione da parte dei meccanici od officine per mancanza di competenze digitali[cite: 1].
+    \item \textbf{Rischio Regolatorio/Data Governance:} Restrizioni sull'accesso ai dati di bordo del veicolo da parte dei costruttori automobilistici[cite: 1].
+\end{itemize}
+
+\subsection{Segnali d'Allarme Precoce (Early Warning Signals) e Mitigazioni}
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\linewidth}{X X X}
+\toprule
+\textbf{Causa di Fallimento} & \textbf{Early Warning Signal} & \textbf{Azione di Mitigazione} \\
+\toprule
+Eccesso di Falsi Allarmi & Churn rate dei clienti pilota $>$ 15\% & Fine-tuning dei modelli con metriche di precision-recall conservative[cite: 1]. \\
+Ostacoli Regolatori & Difficoltà nell'accesso alle porte OBD & Alleanza strategica con provider di hardware telemetrico aperto[cite: 1]. \\
+Mancanza di Interoperabilità & Tempi di integrazione API $>$ 2 mesi & Sviluppo di connettori standardizzati Plug-and-Play per le principali piattaforme[cite: 1]. \\
+\bottomrule
+\end{tabularx}
+\caption{Piano di contingenza basato sull'analisi di Negative Backcasting.}
+\end{table}
+
+\section*{Conclusioni e Prossimi Passi}
+Questa documentazione costituisce la base metodologica per valutare la fattibilità tecnico-economica della business venture[cite: 1]. La combinazione di rigore ingegneristico nell'ambito AI e approccio di project management garantisce una transizione solida dall'idea alla validazione sul mercato[cite: 1].
+
+\end{document}
