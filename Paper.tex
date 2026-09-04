@@ -29,7 +29,7 @@
     colorlinks=true,
     linkcolor=navyblue,
     urlcolor=tealblue,
-    pdftitle={Documentazione Progetto AI Maintenance - Business & Project Management},
+    pdftitle={Documentazione Progetto AI Maintenance - Business \& Project Management},
     pdfauthor={Gruppo di Progetto}
 }
 
@@ -55,9 +55,9 @@
 \begin{titlepage}
     \centering
     
-    \begin{center}
-        \includegraphics[width=8cm]{../UNIVERSALIMAGES/logounipi.png}
-    \end{center}
+    %\begin{center}
+    %    \includegraphics[width=8cm]{img/logounipi.png}
+    %\end{center}
     
     \vspace{0.5cm}
     {\huge \color{tealblue} UNIVERSITÀ DI PISA}\\[0.5cm]
@@ -140,13 +140,48 @@ Instead in the proposed solution:
 \begin{itemize} 
     \item Companies agree to install sensors, or already have them andshare data with the service provider.
     \item Operational costs of the service are lower than the costs of maintenance even for a small number of vehicles, remaining in line with the target of small companies.
-    \item Fleet managers hold sufficient operational budget authority to adopt a new SaaS tool without requiring lengthy corporate procurement approval — relevant because our target includes small-to-mid fleets (30–200 vehicles).
+    \item Fleet managers hold sufficient operational budget authority to adopt a new SaaS tool without requiring lengthy corporate procurement approval — relevant because our target includes small-to-mid fleets (30-200 vehicles).
     \item Enough data is available to train the machine learning model before the service is launched, using customer data only for prediction and future improving of the model. 
     \item The system isn't affected by high risk regulations such as the EU AI Act, since it doesn't interfere directly with the driving capability of a vehicle. This moderate costs
 \end{itemize} 
 
 % --- SECTION 2: COMPETITORS AND POSITIONING ---
 \section{Competitors and Positioning}
+\subsection{Patent-based technology screening}
+
+To complement the market review, we conducted a preliminary patent search on Google Patents to assess technological maturity and potential entry barriers in AI-enabled predictive maintenance for commercial fleets. The search combined terms related to predictive maintenance, machine learning, commercial vehicles and fleets, telematics, OBD data and vehicle health. The initial broad search returned documents related to industrial equipment and infrastructure monitoring, so it was refined by adding fleet-specific terms and excluding unrelated domains.
+The final results indicate that predictive maintenance based on vehicle sensors, OBD/telematics data and automated analysis is an established technological field. The selected documents include maintenance alert systems, ML-based health assessment, predictive maintenance and approaches designed to operate with limited data. The analysis is intended as a source of competitive and technological intelligence and does not constitute a legal freedom-to-operate assessment.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[ht]
+\centering
+\caption{Patent documents and their main relevance}
+\label{tab:patents}
+\small
+\begin{tabularx}{\linewidth}{p{4cm} X}
+\toprule
+\textbf{Patent document} &
+\textbf{Main relevance} \\
+\midrule
+
+US20190066407A1 &
+Real-time OBD and sensor-data analysis, fleet-level maintenance alerts, breakdown-pattern analysis and maintenance-cost estimation \\
+
+US12093901B2 &
+Telematics-based vehicle-component health assessment using feature extraction, clustering and classification \\
+
+US20230315082A1 &
+Predictive maintenance of road-vehicle components \\
+
+EP4379486A1 &
+Resource-efficient predictive maintenance for fleets using selected sensors, a digital twin and incremental learning \\
+
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The patent screening confirms that the use of AI, telematics and OBD data for predictive maintenance is not novel by itself. Therefore, the proposed venture should differentiate primarily through a lightweight, hardware-agnostic SaaS model for small and medium-sized multi-brand fleets, reduced integration effort and interpretable, prioritized maintenance alerts. BOH SI TOGLIE ?!!? The identified documents also suggest that an eventual commercial launch would require a claim-level intellectual-property review.
+
 \subsection{Competitive landscape mapping}
 \noindent We identify three distinct competitive tiers relevant to a predictive maintenance venture targeting small-to-mid commercial fleets.
 
@@ -164,10 +199,12 @@ Instead in the proposed solution:
     \item \textbf{Non AI Substitute Solutions:} Traditional maintenance methods, including:
             \begin{itemize}
                 \item Fixed-interval preventive maintenance, still used by the large majority of small and mid-sized fleets. 35\% higher costs and 40\% more breakdowns annually compared to fleets on optimized programs.
-                \item Manual visual inspection, costing an estimated \$100–\$300 per vehicle per inspection cycle  and administrative overhead 
+                \item Manual visual inspection, costing an estimated \$100-\$300 per vehicle per inspection cycle  and administrative overhead 
                 \item Reactive maintenance (repair only after failure),  the most expensive approach; it can cost 3 to 9 times more than the same service performed proactively
             \end{itemize}
 \end{enumerate}
+
+
 
 \subsection{Assessing Competitors}
 
@@ -195,7 +232,8 @@ operational workflows in a unified environment.
 The main limitation of this approach is the breadth of the platform.
 \subsection{Competitor Comparison}
 
-Table~\ref{tab:competitor-comparison} summarizes the main differences between
+Table %~\ref{tab:competitor-comparison} 
+summarizes the main differences between
 the selected competitors and the proposed venture.
 
 \begin{table}[ht]
@@ -300,9 +338,9 @@ benefit of approximately \$770-\$2,500 per vehicle per year
 
 % --- SECTION : Business model canvas ---
 \section{Business model canvas}
-\begin{center}
-        \includegraphics[width=\linewidth]{BMC.png}
-\end{center}
+%\begin{center}
+%        \includegraphics[width=\linewidth]{img/BMC.png}
+%\end{center}
 
 \subsection{AI Assets and Economic Logic}
 
@@ -379,18 +417,18 @@ Scalability is strongest on the software side. Once the platform and model are o
 The venture should therefore follow a staged growth path. It should first focus on a limited group of fleet customers and a defined set of vehicle types. After validating the value proposition and unit economics, it can expand through standardised integrations, hardware partnerships and indirect distribution via OEMs or insurers. This approach reduces execution risk and ensures that growth is based on demonstrated operational and financial performance.
 % --- SECTION 4: ADA
 \section{Addressable market analysis}
-\noindent This section quantifies the economic opportunity for the proposed venture by estimating the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) adopting a bottom-up methodology. We started from the number of potential customer fleets in the United States then multiplied by the expected annual subscription revenue per vehicle, consistently with the customer segment and pricing assumptions defined in Sections 1–3
+\noindent This section quantifies the economic opportunity for the proposed venture by estimating the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) adopting a bottom-up methodology. We started from the number of potential customer fleets in the United States then multiplied by the expected annual subscription revenue per vehicle, consistently with the customer segment and pricing assumptions defined in Sections 1-3
 
 \subsection{Data source and scope}
-The primary data source for fleet counts is the FMCSA Company Census (dataset az4n-8mr2), which reports active registered motor carriers by fleet size updated on August 2026. According to this registry, there are ~2,230,000 active carriers in the U.S., of which ~700,000 are interstate carriers and ~330,000 hold active common (for-hire) operating authority. Fleet size distribution shows that ~40,000 carriers report 21–100 power units and ~8,000 carriers report 101+ power units.
-The analysis focuses on for-hire carriers with 30–200 vehicles, as this segment matches our target (small-to-mid fleets that lack resources to develop predictive maintenance internally but have sufficient operational budget to adopt a SaaS tool without long procurement approval). Carriers with fewer than 30 vehicles are excluded because they typically operate with informal maintenance practices and limited telematics adoption. Carriers with more than 200 vehicles are excluded because they often have proprietary solutions from OEMs or Tier-1 suppliers (e.g., Bosch Predictive Diagnostics) or internal data science teams, making them less suitable for our proposal.
+The primary data source for fleet counts is the FMCSA Company Census (dataset az4n-8mr2), which reports active registered motor carriers by fleet size updated on August 2026. According to this registry, there are ~2,230,000 active carriers in the U.S., of which ~700,000 are interstate carriers and ~330,000 hold active common (for-hire) operating authority. Fleet size distribution shows that ~40,000 carriers report 21-100 power units and ~8,000 carriers report 101+ power units.
+The analysis focuses on for-hire carriers with 30-200 vehicles, as this segment matches our target (small-to-mid fleets that lack resources to develop predictive maintenance internally but have sufficient operational budget to adopt a SaaS tool without long procurement approval). Carriers with fewer than 30 vehicles are excluded because they typically operate with informal maintenance practices and limited telematics adoption. Carriers with more than 200 vehicles are excluded because they often have proprietary solutions from OEMs or Tier-1 suppliers (e.g., Bosch Predictive Diagnostics) or internal data science teams, making them less suitable for our proposal.
 
 \subsection{Total Addressable Market (TAM) Estimation}
-To estimate the number of carriers in the 30–200 vehicle range, we apply conservative proportional assumptions to the FMCSA buckets:
-•	21–100 bucket (~40,000 carriers): We assume 55\% of these carriers fall in the 30–100 range (the remainder are 21–29 vehicles). This yields approximately ~22,000 carriers.
-•	101+ bucket (~8,000 carriers): We assume 35\% of these carriers fall in the 101–200 range (the remainder are 201+ vehicles, which are enterprise fleets less relevant to our positioning). This yields approximately ~2,800 carriers.
-Summing these gives a TAM of approximately 24,800 carriers in the U.S. with 30–200 vehicles.
-To convert carriers to vehicles, we assume an average fleet size of 65 vehicles (midpoint of the 30–200 range, slightly conservative to account for the right-skewed distribution where more carriers cluster near the lower end). This yields an estimated 1,612,000 vehicles in the TAM segment.
+To estimate the number of carriers in the 30-200 vehicle range, we apply conservative proportional assumptions to the FMCSA buckets:
+•	21-100 bucket (~40,000 carriers): We assume 55\% of these carriers fall in the 30-100 range (the remainder are 21-29 vehicles). This yields approximately ~22,000 carriers.
+•	101+ bucket (~8,000 carriers): We assume 35\% of these carriers fall in the 101-200 range (the remainder are 201+ vehicles, which are enterprise fleets less relevant to our positioning). This yields approximately ~2,800 carriers.
+Summing these gives a TAM of approximately 24,800 carriers in the U.S. with 30-200 vehicles.
+To convert carriers to vehicles, we assume an average fleet size of 65 vehicles (midpoint of the 30-200 range, slightly conservative to account for the right-skewed distribution where more carriers cluster near the lower end). This yields an estimated 1,612,000 vehicles in the TAM segment.
 Applying the midpoint subscription price of USD 12.5/vehicle/month, the annual revenue per vehicle is USD 150. Therefore:
 \begin{equation}
     \text{TAM} = \underbrace{1{,}612{,}000}_{\text{vehicles}} \times \underbrace{150}_{\text{USD/vehicle/year}} \approx 241.8 \text{ million USD/year}
@@ -419,8 +457,8 @@ Given the early-stage nature of the venture (no proprietary large-scale dataset,
 \end{equation}  
 
 \subsection{Investment justification}
-The SOM of ~2.9 million USD/year by Year 3 represents a credible revenue base for an early-stage AI venture. Using ATRI benchmarks, repair and maintenance costs average USD 0.215/mile, or approximately USD 17,200/vehicle/year at 80,000 miles. A subscription priced at USD 108–192/vehicle/year would be economically viable even with conservative savings of 5–10\% on R\&M and 10–20\% on downtime, yielding a net benefit of approximately USD 770–2,500/vehicle/year (5–15× return on subscription cost), as assumed in the previous section. (da riguardare tutta questa parte? potremmo toglierla). 
-This implies that the customer lifetime value (LTV) significantly exceeds the customer acquisition cost (CAC) and onboarding expenses, satisfying the feasibility condition stated in Section 3.3 (LTV >> CAC, gross margin sufficient to finance model development). The market opportunity therefore justifies the investment and development effort required to launch the venture, provided that the pilot validation plan (15–30 customer discovery interviews, 3–6 month pilot with 50–100 vehicles) successfully confirms the assumed pain points and cost savings .
+The SOM of ~2.9 million USD/year by Year 3 represents a credible revenue base for an early-stage AI venture. Using ATRI benchmarks, repair and maintenance costs average USD 0.215/mile, or approximately USD 17,200/vehicle/year at 80,000 miles. A subscription priced at USD 108-192/vehicle/year would be economically viable even with conservative savings of 5-10\% on R\&M and 10-20\% on downtime, yielding a net benefit of approximately USD 770-2,500/vehicle/year (5-15× return on subscription cost), as assumed in the previous section. (da riguardare tutta questa parte? potremmo toglierla). 
+This implies that the customer lifetime value (LTV) significantly exceeds the customer acquisition cost (CAC) and onboarding expenses, satisfying the feasibility condition stated in Section 3.3 (LTV >> CAC, gross margin sufficient to finance model development). The market opportunity therefore justifies the investment and development effort required to launch the venture, provided that the pilot validation plan (15-30 customer discovery interviews, 3-6 month pilot with 50-100 vehicles) successfully confirms the assumed pain points and cost savings .
 
 
 \begin{table}[h!]
@@ -445,7 +483,7 @@ SOM (Y3) & $\sim$300 & $\sim$19,300 & $\sim$2.9 M &
 
 % --- SECTION 5:Personas and validation strategies---
 \section{Personas and Validation Strategies}
-\noindent This section defines the user personas that will guide market testing and describes the validation strategy for the proposed venture. The analysis still focuses on small-to-mid commercial fleets (30–200 vehicles) in the United States and treats all claims about customer adoption, data availability and economic benefits as hypotheses to be tested.
+\noindent This section defines the user personas that will guide market testing and describes the validation strategy for the proposed venture. The analysis still focuses on small-to-mid commercial fleets (30-200 vehicles) in the United States and treats all claims about customer adoption, data availability and economic benefits as hypotheses to be tested.
 
 \subsection{Validation objectives}
 \noindent The primary objectives of the market test are to:
@@ -453,7 +491,7 @@ SOM (Y3) & $\sim$300 & $\sim$19,300 & $\sim$2.9 M &
     \item Confirm that unplanned downtime and reactive maintenance are perceived as high-priority, costly problems by the target segment.
     \item Validate that existing alternatives (fixed-interval maintenance, OEM solutions, enterprise telematics platforms) are considered too complex, expensive or brand-restricted for small-to-mid fleets.
     \item Assess whether target fleets have or can provide sufficiently reliable OBD or telematics data with acceptable integration effort.
-    \item Estimate willingness to pay within the proposed range of USD 8–15 per vehicle per month (approximately USD 96–180 per year).
+    \item Estimate willingness to pay within the proposed range of USD 8-15 per vehicle per month (approximately USD 96-180 per year).
     \item Obtain early evidence that a pilot deployment can generate measurable improvements in downtime, emergency repairs or total repair-and-maintenance expenditure.
 \end{itemize}
 
@@ -462,7 +500,7 @@ SOM (Y3) & $\sim$300 & $\sim$19,300 & $\sim$2.9 M &
 \subsubsection{Persona 1 - Fleet manager}
 \noindent \textbf{Name and profile:} Peter Parker, Fleet Manager at a regional logistics company operating 80 commercial vehicles.
 \noindent \textbf{Role:} Responsible for fleet availability, maintenance budget, on-time delivery performance and selection of operational tools. Approves or co-approves software expenditures for fleet management and maintenance.
-\noindent \textbf{Context:}  Manages a mixed fleet of 30–200 vehicles. Receives data from telematics providers, workshops and drivers, but often plans maintenance using fixed schedules and fragmented spreadsheets or legacy software.
+\noindent \textbf{Context:}  Manages a mixed fleet of 30-200 vehicles. Receives data from telematics providers, workshops and drivers, but often plans maintenance using fixed schedules and fragmented spreadsheets or legacy software.
 \vspace{1cm}
 \textbf{Goals:}
 \begin{itemize}
@@ -511,7 +549,7 @@ SOM (Y3) & $\sim$300 & $\sim$19,300 & $\sim$2.9 M &
 \noindent \textbf{Adoption condition:} Will actively use the system only if alerts are interpretable, prioritized and connected to concrete maintenance actions. This reflects the critical assumption in Section 3.2 that customers must perceive the reduction in downtime and unnecessary maintenance as greater than the subscription and implementation costs .\
 
 \subsection{Key hypotheses to validate}
-\noindent The market test focuses on the following hypotheses, which are directly derived from the problem definition, competitive positioning and business model described in Sections 1–3 :
+\noindent The market test focuses on the following hypotheses, which are directly derived from the problem definition, competitive positioning and business model described in Sections 1-3 :
 
 \begin{table}[h!]
 \centering
@@ -626,7 +664,7 @@ Extend pilot duration, refine the model or reconsider the value proposition. \\
 \subsubsection{Risk Management}
 \noindent If multiple hypotheses fail simultaneously (e.g., H1, H2 and H5), the venture will be considered not viable in the current form and a strategic pivot will be triggered. If only some hypotheses fail (e.g., H3 or H4), targeted iterations will be prioritized before re-testing.
 
-\noindent The validation metrics and decision rules described above provide the basis for the negative backcasting exercise in Section 6. In that analysis, we will assume that the venture has failed and trace backward through these signals to identify which hypotheses (H1–H6) were violated, what early warnings were missed and which mitigation actions could have prevented the failure. This disciplined pessimism complements the validation strategy by highlighting risks that must be monitored even if early tests are successful
+\noindent The validation metrics and decision rules described above provide the basis for the negative backcasting exercise in Section 6. In that analysis, we will assume that the venture has failed and trace backward through these signals to identify which hypotheses (H1-H6) were violated, what early warnings were missed and which mitigation actions could have prevented the failure. This disciplined pessimism complements the validation strategy by highlighting risks that must be monitored even if early tests are successful
 \section{Failure Analysis andRisk Mitigation}
 \subsection{Scenario of Failure}
 \noindent Assume that by Year 3 the venture has:
