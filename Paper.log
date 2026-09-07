@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  7 SEP 2026 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  7 SEP 2026 17:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -978,7 +978,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 815--818
 
  []
 
-[23] [24] (./Paper.aux)
+[23]
+Overfull \hbox (3.68839pt too wide) in paragraph at lines 833--834
+[]\T1/phv/m/n/10.95 (-20) Bosch. \T1/phv/m/sl/10.95 (-20) Bosch Pre-dic-tive Di-ag-nos-tics ^^U Prod-uct In-for-ma-tion\T1/phv/m/n/10.95 (-20) . Avail-able at: https://www.bosch-
+ []
+
+[24] (./Paper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -987,18 +992,18 @@ Package rerunfilecheck Info: File `Paper.out' has not changed.
 (rerunfilecheck)             Checksum: 669A6F87C0C7CB904A7C85D229271114;12214.
  ) 
 Here is how much of TeX's memory you used:
- 15324 strings out of 467525
- 240427 string characters out of 5418983
+ 15325 strings out of 467525
+ 240437 string characters out of 5418983
  719888 words of memory out of 5000000
  43512 multiletter control sequences out of 15000+600000
- 683031 words of font info for 330 fonts, out of 8000000 for 9000
+ 683157 words of font info for 331 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1056b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Paper.pdf (26 pages, 1475907 bytes).
+Output written on Paper.pdf (26 pages, 1474722 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 480 compressed objects within 5 object streams
+ 528 PDF objects out of 1000 (max. 8388607)
+ 475 compressed objects within 5 object streams
  134 named destinations out of 1000 (max. 500000)
  64456 words of extra memory for PDF output out of 74296 (max. 10000000)
 
