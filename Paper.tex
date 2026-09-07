@@ -142,7 +142,7 @@ Instead in the proposed solution:
     \item Operational costs of the service are lower than the costs of maintenance even for a small number of vehicles, remaining in line with the target of small companies.
     \item Fleet managers hold sufficient operational budget authority to adopt a new SaaS tool without requiring lengthy corporate procurement approval — relevant because our target includes small-to-mid fleets (30-200 vehicles).
     \item Enough data is available to train the machine learning model before the service is launched, using customer data only for prediction and future improving of the model. 
-    \item The system isn't affected by high risk regulations such as the EU AI Act, since it doesn't interfere directly with the driving capability of a vehicle. This moderate costs
+    \item In its current configuration, the system does not fall under the high-risk AI applications defined by the EU AI Act, as it does not directly control vehicle operation or safety-critical functions. However, the regulatory framework is evolving, and future amendments or national implementations could introduce additional compliance requirements. This uncertainty is treated as a monitored strategic risk (see Section 6.2.7).
 \end{itemize} 
 
 % --- SECTION 2: COMPETITORS AND POSITIONING ---
@@ -334,7 +334,7 @@ benefit of approximately \$770-\$2,500 per vehicle per year
 \noindent Despite lacking the proprietary data volume of Carly, SteerAI, or Bosch, we mitigate this through: (i) pretraining on open predictive-maintenance datasets (e.g. NASA) before fine-tuning on real fleet data; (ii) hardware-agnostic, multi-brand integration that serves mixed fleets underserved by OEM-locked solutions; (iii) emphasis on interpretable, actionable warnings over black-box accuracy; and (iv) partnerships with telematics providers or fleet associations.
 
 \subsection*{Empirical validation plan}
-\noindent Competitiveness claims will be tested through: (a) 15-30 customer discovery interviews to confirm that existing solutions are too complex, expensive, or brand-restricted for small fleets (success:  > \$60\% confirm at least one obstacle); (b) a 3-6 month pilot with 50-100 vehicles to measure actual reduction in breakdowns and R\&M costs (success: statistically significant improvement, p < 0.1\$); and (c) optional A/B comparison between predictive and fixed-schedule maintenance on vehicle subsets. Until validated, competitiveness remains a hypothesis supported by economic plausibility and strategic differentiation, not an established fact.
+\noindent Competitiveness claims will be tested through: (a) 15-30 customer discovery interviews to confirm that existing solutions are too complex, expensive, or brand-restricted for small fleets (success:  > 60\% confirm at least one obstacle); (b) a 3-6 month pilot with 50-100 vehicles to measure actual reduction in breakdowns and R\&M costs (success: statistically significant improvement, p < 0.1); and (c) optional A/B comparison between predictive and fixed-schedule maintenance on vehicle subsets. Until validated, competitiveness remains a hypothesis supported by economic plausibility and strategic differentiation, not an established fact.
 
 % --- SECTION : Business model canvas ---
 \section{Business model canvas}
@@ -439,7 +439,7 @@ Not all TAM carriers are immediately addressable. Based on the assumptions in Se
 •	Operate primarily intrastate with no interstate authority (less likely to invest in advanced telematics).
 •	Are not multi-brand (single-brand fleets may prefer OEM-locked solutions like Bosch) .
 •	Lack existing telematics or OBD-II data access (our solution assumes sensor data is already available or can be installed with minimal overhead) .
-We estimate that 40% of the TAM meets these criteria (multi-brand, digital-ready, budget authority for SaaS tools). Therefore:
+We estimate that 40\% of the TAM meets these criteria (multi-brand, digital-ready, budget authority for SaaS tools). Therefore:
 \begin{equation}
     \text{SAM} = \underbrace{1{,}612{,}000}_{\text{vehicles}} \times \underbrace{0.40}_{\text{proportion}} \approx 645{,}000 \text{ vehicles}
 \end{equation}
@@ -468,11 +468,11 @@ This implies that the customer lifetime value (LTV) significantly exceeds the cu
 \toprule
 \textbf{Level} & \textbf{Carriers} & \textbf{Vehicles} & \textbf{Annual Revenue (USD)} & \textbf{Logic} \\
 \midrule
-TAM & $\sim$24,700 & $\sim$1,605,000 & $\sim$240.8 M &
+TAM & $\sim$24,800 & $\sim$1,612,000 & $\sim$241.8 M &
 All U.S. for-hire carriers with 30--200 vehicles; USD 150/vehicle/year \\
-SAM & $\sim$9,900 & $\sim$642,000 & $\sim$96.3 M &
+SAM & $\sim$9,900 & $\sim$645,000 & $\sim$96.7 M &
 40\% of TAM: multi-brand, digital-ready, SaaS budget authority \\
-SOM (Y3) & $\sim$300 & $\sim$19,300 & $\sim$2.9 M &
+SOM (Y3) & $\sim$300 & $\sim$19,350 & $\sim$2.9 M &
 3\% of SAM by Year 3; staged growth via pilots and standardized integrations \\
 \bottomrule
 \end{tabularx}

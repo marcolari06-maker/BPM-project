@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1788538767.12349 "/Users/tommasopellegrini/Documents/GitHub/BPM-project/Paper.tex" "Paper.pdf" "Paper" 1788538768.22081 0
-  "/Users/tommasopellegrini/Documents/GitHub/BPM-project/Paper.tex" 1788538766.89612 56331 e0c75aa41d4ccaea74a1fd4aeb01e3ae ""
+["pdflatex"] 1788786492.25437 "/Users/tommasopellegrini/Documents/GitHub/BPM-project/Paper.tex" "Paper.pdf" "Paper" 1788786493.4168 0
+  "/Users/tommasopellegrini/Documents/GitHub/BPM-project/Paper.tex" 1788786491.98407 56581 2e978a5038a04d2db97cea55c9ca50c5 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -109,10 +109,10 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1773076714 5541377 04880c840ca220163a28f1a3af0ee662 ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1773076611 3636760 c31cbe48e18483967cbad4fa6aaf8fd8 ""
   "/usr/local/texlive/2026/texmf.cnf" 1772409725 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "Paper.aux" 1788538768.13246 9614 353223ee883ac2c1861fe69d2e125569 "pdflatex"
-  "Paper.out" 1788538768.13484 12115 aab12c9a248cd10f4fb5963b3858afd0 "pdflatex"
-  "Paper.tex" 1788538766.89612 56331 e0c75aa41d4ccaea74a1fd4aeb01e3ae ""
-  "Paper.toc" 1788538768.1354 5447 132b8ec386afa263c33edcad193eda98 "pdflatex"
+  "Paper.aux" 1788786493.27308 9614 353223ee883ac2c1861fe69d2e125569 "pdflatex"
+  "Paper.out" 1788786493.27527 12115 aab12c9a248cd10f4fb5963b3858afd0 "pdflatex"
+  "Paper.tex" 1788786491.98407 56581 2e978a5038a04d2db97cea55c9ca50c5 ""
+  "Paper.toc" 1788786493.27586 5447 132b8ec386afa263c33edcad193eda98 "pdflatex"
   (generated)
   "Paper.aux"
   "Paper.log"
