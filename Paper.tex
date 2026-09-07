@@ -17,6 +17,7 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{amsmath}
 % --- COLOR PALETTE ---
 \definecolor{navyblue}{RGB}{20, 45, 85}
@@ -72,14 +73,14 @@
     
     \begin{minipage}{0.48\textwidth}
         \begin{flushleft} \large
-            \textbf{Corso:} Business and Project Management\\
-            \textbf{Ambito:} AI-Driven Business Venture\\
+            \textbf{Course:} Business and Project Management\\
+            \textbf{Matter:} AI-Driven Business Venture\\
         \end{flushleft}
     \end{minipage}
     \begin{minipage}{0.48\textwidth}
         \begin{flushright} \large
-            \textbf{Autori:} Marco Lari, Tommaso Pellegrini\\
-            \textbf{Anno accademico:} 2025/2026
+            \textbf{Authors:} Marco Lari, Tommaso Pellegrini\\
+            \textbf{Accademic year:} 2025/2026
         \end{flushright}
     \end{minipage}
     \vspace{0.5cm}
@@ -107,8 +108,8 @@ such as transportation, logistic and rental businesses.
 \subsection*{Problems}
 \begin{itemize}
     \item High maintenance costs; costs rose by 8.6\% year over year in 2025, reaching an industry average of 0.215\$ per mile for commercial vehicles in USA. (ATRI report)
-    \item Downtime and overhead of maintenance work, the average mileage traveled between brakdowns fell to ~36.500 from ~38.500, indicating that the matter is also worsening over time. (ATRI report)
-    \item Parts reperability issues. The rising tariffs on importation and the supply chain directly impact the availability of spare parts. (ATRI report)
+    \item Downtime and overhead of maintenance work; the average mileage traveled between brakdowns fell to ~36.500 from ~38.500, indicating that the matter is also worsening over time. (ATRI report)
+    \item Parts reperability issues; the rising tariffs on importation and the supply chain directly impact the availability of spare parts. (ATRI report)
 \end{itemize}
 
 \subsection*{Drivers}
@@ -117,10 +118,8 @@ such as transportation, logistic and rental businesses.
     \item Unnecessary repairs or replacements to maintain security standard due to lack of predictive maintenance, which leads to periodic schedules or over-maintenance.
 \end{itemize}
 \subsection{Solution and innovations}
-\noindent Given the above problems and drivers, we aim to provide a solution based on a machine learning model that enables to treat
-such matters with statistical evidence, such that overhead is reduced due to prediction of failures and costs are reduced with
-reduction on unnecessary maintenance work.
-\noindent A machine learning approach is suitable for this kind of problem because unlike fixed rules, heuristic or treshold based approaches, it can learn patterns from data to adapt to situations without the need to make rules for every possible scenario.
+\noindent Given the above problems and drivers, we aim to provide a solution based on a machine learning model that enables to treat such matters with statistical evidence, such that overhead is reduced due to prediction of failures and costs are reduced with less unnecessary maintenance work.
+\noindent A machine learning approach is suitable for this kind of problem because unlike fixed rules, heuristic or threshold based approaches, it can learn patterns from data to adapt to situations without the need to make rules for every possible scenario.
 \noindent Furthermore it makes the system much more adaptive and scalable, since it can be continuously improved with the collected data, and the data income comes with the normal operation of the vechicles.
 \newline\newline
 \noindent This kind of approach is innovative in small automotive companies, since is usually adopted as an internal solution by
@@ -138,7 +137,7 @@ Instead in the proposed solution:
 \end{itemize}
 \subsection{Assumptions}
 \begin{itemize} 
-    \item Companies agree to install sensors, or already have them andshare data with the service provider.
+    \item Companies agree to install sensors, or already have them and share data with the service provider.
     \item Operational costs of the service are lower than the costs of maintenance even for a small number of vehicles, remaining in line with the target of small companies.
     \item Fleet managers hold sufficient operational budget authority to adopt a new SaaS tool without requiring lengthy corporate procurement approval — relevant because our target includes small-to-mid fleets (30-200 vehicles).
     \item Enough data is available to train the machine learning model before the service is launched, using customer data only for prediction and future improving of the model. 
@@ -180,20 +179,20 @@ Resource-efficient predictive maintenance for fleets using selected sensors, a d
 \end{tabularx}
 \end{table}
 
-The patent screening confirms that the use of AI, telematics and OBD data for predictive maintenance is not novel by itself. Therefore, the proposed venture should differentiate primarily through a lightweight, hardware-agnostic SaaS model for small and medium-sized multi-brand fleets, reduced integration effort and interpretable, prioritized maintenance alerts. BOH SI TOGLIE ?!!? The identified documents also suggest that an eventual commercial launch would require a claim-level intellectual-property review.
+\noindent The patent screening confirms that the use of AI, telematics and OBD data for predictive maintenance is not novel by itself. Therefore, the proposed venture should differentiate primarily through a lightweight, hardware-agnostic SaaS model for small and medium-sized multi-brand fleets, reduced integration effort and interpretable, prioritized maintenance alerts.
 
 \subsection{Competitive landscape mapping}
 \noindent We identify three distinct competitive tiers relevant to a predictive maintenance venture targeting small-to-mid commercial fleets.
 
 \begin{enumerate}
-    \item \textbf{Direct Competitors:} Startups and scale-ups offering AI-driven telematics solutions for predictive maintenance, such as:
+    \item \textbf{Direct Competitors:} Companies offering AI-driven telematics solutions for predictive maintenance, such as:
           \begin{itemize}
             \item \textbf{Carly enterprise:} An affirmed company in the automotive telematics space. Provides predictive maintenance as well as cost calculation, all made for fleets.
             \item \textbf{Steer AI:} A startup that provides predictive maintenance for fleets, with a focus on electric vehicles.
           \end{itemize}
     \item \textbf{Incumbent / OEM:} Established automotive manufacturers and Tier 1 suppliers that offer proprietary predictive maintenance solutions, such as:
             \begin{itemize}
-                \item \textbf{Bosch Predictive diagnostics::} a proprietary software solution that continuously monitors component and system health using onboard and cloud data, aimed at preventing breakdowns before they occur
+                \item \textbf{Bosch Predictive diagnostics:} a proprietary software solution that continuously monitors component and system health using onboard and cloud data, aimed at preventing breakdowns before they occur
                 \item Similar proprietary offerings exist from other Tier-1 suppliers and OEMs.
             \end{itemize}
     \item \textbf{Non AI Substitute Solutions:} Traditional maintenance methods, including:
@@ -232,9 +231,7 @@ operational workflows in a unified environment.
 The main limitation of this approach is the breadth of the platform.
 \subsection{Competitor Comparison}
 
-Table %~\ref{tab:competitor-comparison} 
-summarizes the main differences between
-the selected competitors and the proposed venture.
+The table below summarizes the main differences between the selected competitors and the proposed venture.
 
 \begin{table}[ht]
 \centering
@@ -334,13 +331,49 @@ benefit of approximately \$770-\$2,500 per vehicle per year
 \noindent Despite lacking the proprietary data volume of Carly, SteerAI, or Bosch, we mitigate this through: (i) pretraining on open predictive-maintenance datasets (e.g. NASA) before fine-tuning on real fleet data; (ii) hardware-agnostic, multi-brand integration that serves mixed fleets underserved by OEM-locked solutions; (iii) emphasis on interpretable, actionable warnings over black-box accuracy; and (iv) partnerships with telematics providers or fleet associations.
 
 \subsection*{Empirical validation plan}
-\noindent Competitiveness claims will be tested through: (a) 15-30 customer discovery interviews to confirm that existing solutions are too complex, expensive, or brand-restricted for small fleets (success:  > 60\% confirm at least one obstacle); (b) a 3-6 month pilot with 50-100 vehicles to measure actual reduction in breakdowns and R\&M costs (success: statistically significant improvement, p < 0.1); and (c) optional A/B comparison between predictive and fixed-schedule maintenance on vehicle subsets. Until validated, competitiveness remains a hypothesis supported by economic plausibility and strategic differentiation, not an established fact.
+\noindent Competitiveness claims will be tested through: 
+\begin{enumerate}
+    \item 15-30 customer discovery interviews to confirm that existing solutions are too complex, expensive, or brand-restricted for small fleets (success:  > 60\% confirm at least one obstacle); 
+    \item a 3-6 month pilot with 50-100 vehicles to measure actual reduction in breakdowns and R\&M costs (success: statistically significant improvement, p < 0.1); 
+    \item optional A/B comparison between predictive and fixed-schedule maintenance on vehicle subsets. Until validated, competitiveness remains a hypothesis supported by economic plausibility and strategic differentiation, not an established fact.
+
+\end{enumerate}
 
 % --- SECTION : Business model canvas ---
 \section{Business model canvas}
 \begin{center}
-        \includegraphics[width=\linewidth]{img/BMC.png}
+        \includegraphics[width=\linewidth]{BMC.png}
 \end{center}
+
+\paragraph{Customer segments.}
+The primary customer segment consists of managers of commercial fleets, logistics companies and long-term rental businesses. These organizations operate multiple vehicles and are exposed to maintenance costs, unexpected breakdowns and vehicle downtime. The initial target includes small-to-medium-sized companies that may not have the financial or technical resources to develop an internal predictive-maintenance system. A secondary customer segment includes original equipment manufacturers (OEMs) and insurance companies interested in using vehicle-health and maintenance data for operational, analytical or risk-management purposes. The distinction between primary and secondary customers is important because fleet operators are expected to be the initial paying customers, whereas OEMs and insurers may become later-stage customers.
+
+\paragraph{Value propositions.}
+The main value proposition is an AI-driven service that uses vehicle data to identify potential anomalies and support more efficient maintenance decisions. The solution aims to reduce downtime and operational overhead caused by unexpected failures. It can also help companies to move from purely scheudled or reactive maintenance toward a more condition-based approach. A further value proposition is lightweight integration: the service is designed to be accessible to smaller companies and to connect with existing hardware and data sources rather than requiring a completely new infrastructure. The system should therefore provide prioritized and understandable alerts instead of only exposing raw diagnostic data.
+
+\paragraph{Channels.}
+The main distribution channel is direct B2B sales to fleet managers and other decision-makers within logistics, rental and commercial-transport companies. Direct sales are appropriate during the initial phase. Additional channels may be developed through partnerships with hardware and telematics providers to facilitate access to vehicle data. In a later stage, partnerships with insurance companies, OEMs and other automotive-service providers could support indirect distribution and increase market reach.
+
+\paragraph{Customer relationships.}
+The venture will establish a direct B2B relationship with its customers. During the onboarding phase, this relationship will include assisted integration, configuration of data sources and training for fleet and maintenance managers. Continuous technical support will be required because the service depends on data quality, changes in vehicle fleets and the interpretation of maintenance alerts. In addition, the machine-learning models will require continuous monitoring and periodic improvement. As the platform becomes more standardized, part of the onboarding and support process may be automated, while larger customers may continue to receive dedicated technical assistance.
+
+\paragraph{Key activities.}
+The main activities include the development and continuous improvement of the machine-learning model, data harvesting and processing, and integration with pre-existing vehicle. Data harvesting involves collecting vehicle measurements, and maintenance events from the available hardwar. The venture must also validate the quality of the data, monitor model performance and translate predictions into useful maintenance recommendations. Commercial activities, such as customer discovery and partnership development, are also necessary to validate the business model and support customer acquisition.
+
+\paragraph{Key resources.}
+The main technological resource is the machine-learning model. This is supported by data-storage systems and cloud infrastructure for ingestion, processing and monitoring. Other relevant resources include the expertise of the technical team, maintenance data, software integrations and relationships established with pilot customers and partners. The quality and availability of these resources directly affect the reliability and scalability of the proposed service.
+
+\paragraph{Key partners.}
+The main partners are hardware and telematics providers, which supply the sensors or data interfaces required by the service. Independent mechanical repair shops and workshops are also important because they can provide operational knowledge, validate alerts and support the execution of recommended maintenance actions. Insurance companies may become partners by using vehicle-health information for risk assessment or by supporting preventive-maintenance programs. These partnerships can reduce customer-acquisition barriers, improve access to data and strengthen the credibility of the venture.
+
+\paragraph{Revenue streams.}
+The primary revenue stream is a tiered subscription charged for each active vehicle per month. A per-vehicle pricing model aligns the cost of the service with the size of the customer fleet and allows the venture to generate recurring revenue. Different subscription tiers may reflect differences in data volume, level of technical support, number of integrations and availability of advanced analytics. Additional revenue may come from a one-time setup or integration fee for more complex deployments. Hardware can either be sold separately or included in premium plans, depending on whether customers already possess compatible equipment.
+
+\paragraph{Cost structure.}
+The main cost drivers are cloud infrastructure, research and development of the machine-learning model, data-acquisition costs and regulatory-compliance costs. Although the cost per additional vehicle may decrease as the platform scales, initial investments in software development, integrations and model validation are expected to be significant.
+\\
+\\ Overall, the Business Model Canvas highlights the relationship between the operational problem faced by commercial fleets and the economic logic of the proposed solution. The venture creates value by transforming vehicle data into actionable maintenance information, delivers this value through direct B2B relationships and technical partnerships, and captures value primarily through recurring subscriptions. However, the feasibility of the model depends on several assumptions, including access to reliable data, acceptable integration costs, customer willingness to pay and the ability of the machine-learning system to generate measurable reductions in downtime and unnecessary maintenance. The following section describes the machine-learning pipeline that supports this business model.
+
 
 \subsection{AI Assets and Economic Logic}
 
@@ -354,6 +387,13 @@ The venture should measure unit economics through indicators such as customer ac
 
 \subsubsection{Overview}
 \noindent The predictive maintenance system relies on two distinct pipelines: a \textbf{training pipeline}, executed offline to build and validate the model, and an \textbf{inference pipeline}, executed in production to generate real-time predictions on incoming telemetry data. Separating these two pipelines is essential both for engineering clarity and to prevent inconsistencies between how features are computed during training and during deployment.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{pipeline.png}
+    \caption{Business Model Canvas for the AI-driven predictive-maintenance venture.}
+    \label{fig:bmc_canvas}
+\end{figure}
 
 \subsubsection{Training Pipeline}
 
@@ -406,27 +446,31 @@ The business model depends on several critical assumptions:
     \item Hardware providers, repair shops, OEMs and insurers are willing to cooperate under commercially acceptable conditions.
 \end{itemize}
 
-These assumptions are interdependent. For example, model accuracy depends on data quality, while data quality depends on hardware reliability and customer usage. Customer willingness to pay depends on measurable economic benefits, but those benefits can only be demonstrated through successful integration and sufficient operating data. Similarly, scalability depends on standardising deployments, while standardisation may be difficult if vehicles and customer systems differ substantially.
+\noindent These assumptions are interdependent. For example, model accuracy depends on data quality, while data quality depends on hardware reliability and customer usage. Customer willingness to pay depends on measurable economic benefits, but those benefits can only be demonstrated through successful integration and sufficient operating data. Similarly, scalability depends on standardising deployments, while standardisation may be difficult if vehicles and customer systems differ substantially.
 
 \subsection{Feasibility and Scalability Assessment}
 
 The model is potentially feasible because it addresses a costly and recurring operational problem and generates recurring revenue. Its strongest economic logic is the link between preventive predictions and reduced downtime. However, feasibility should be tested through pilots rather than assumed: initial pilots should compare a customer’s maintenance performance before and after implementation using indicators such as unexpected failures, downtime hours, maintenance expenditure and vehicle utilisation.
-
+\\
 Scalability is strongest on the software side. Once the platform and model are operational, adding vehicles can increase recurring revenue without requiring a complete redesign of the service. The main scalability constraints are data heterogeneity, hardware deployment, customer-specific integration and the need to maintain prediction quality across different vehicle fleets.
-
+\\
 The venture should therefore follow a staged growth path. It should first focus on a limited group of fleet customers and a defined set of vehicle types. After validating the value proposition and unit economics, it can expand through standardised integrations, hardware partnerships and indirect distribution via OEMs or insurers. This approach reduces execution risk and ensures that growth is based on demonstrated operational and financial performance.
 % --- SECTION 4: ADA
 \section{Addressable market analysis}
-\noindent This section quantifies the economic opportunity for the proposed venture by estimating the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) adopting a bottom-up methodology. We started from the number of potential customer fleets in the United States then multiplied by the expected annual subscription revenue per vehicle, consistently with the customer segment and pricing assumptions defined in Sections 1-3
+\noindent This section quantifies the economic opportunity for the proposed venture by estimating the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) adopting a bottom-up methodology. We started from the number of potential customer fleets in the United States then multiplied by the expected annual subscription revenue per vehicle, consistently with the customer segment and pricing assumptions defined in Sections 1-3.
 
 \subsection{Data source and scope}
 The primary data source for fleet counts is the FMCSA Company Census (dataset az4n-8mr2), which reports active registered motor carriers by fleet size updated on August 2026. According to this registry, there are ~2,230,000 active carriers in the U.S., of which ~700,000 are interstate carriers and ~330,000 hold active common (for-hire) operating authority. Fleet size distribution shows that ~40,000 carriers report 21-100 power units and ~8,000 carriers report 101+ power units.
-The analysis focuses on for-hire carriers with 30-200 vehicles, as this segment matches our target (small-to-mid fleets that lack resources to develop predictive maintenance internally but have sufficient operational budget to adopt a SaaS tool without long procurement approval). Carriers with fewer than 30 vehicles are excluded because they typically operate with informal maintenance practices and limited telematics adoption. Carriers with more than 200 vehicles are excluded because they often have proprietary solutions from OEMs or Tier-1 suppliers (e.g., Bosch Predictive Diagnostics) or internal data science teams, making them less suitable for our proposal.
+\\
+\\
+The analysis focuses on for-hire carriers with 30-200 vehicles, as this segment matches our target. Carriers with fewer than 30 vehicles are excluded because they typically operate with informal maintenance practices and limited telematics adoption. Carriers with more than 200 vehicles are excluded because they often have proprietary solutions from OEMs or Tier-1 suppliers (e.g., Bosch Predictive Diagnostics) or internal data science teams, making them less suitable for our proposal.
 
 \subsection{Total Addressable Market (TAM) Estimation}
 To estimate the number of carriers in the 30-200 vehicle range, we apply conservative proportional assumptions to the FMCSA buckets:
-•	21-100 bucket (~40,000 carriers): We assume 55\% of these carriers fall in the 30-100 range (the remainder are 21-29 vehicles). This yields approximately ~22,000 carriers.
-•	101+ bucket (~8,000 carriers): We assume 35\% of these carriers fall in the 101-200 range (the remainder are 201+ vehicles, which are enterprise fleets less relevant to our positioning). This yields approximately ~2,800 carriers.
+\begin{itemize}
+    \item 21-100 bucket (~40,000 carriers): We assume 55\% of these carriers fall in the 30-100 range (the remainder are 21-29 vehicles). This yields approximately ~22,000 carriers.
+    \item 101+ bucket (~8,000 carriers): We assume 35\% of these carriers fall in the 101-200 range (the remainder are 201+ vehicles, which are enterprise fleets less relevant to our positioning). This yields approximately ~2,800 carriers.
+\end{itemize}
 Summing these gives a TAM of approximately 24,800 carriers in the U.S. with 30-200 vehicles.
 To convert carriers to vehicles, we assume an average fleet size of 65 vehicles (midpoint of the 30-200 range, slightly conservative to account for the right-skewed distribution where more carriers cluster near the lower end). This yields an estimated 1,612,000 vehicles in the TAM segment.
 Applying the midpoint subscription price of USD 12.5/vehicle/month, the annual revenue per vehicle is USD 150. Therefore:
@@ -436,9 +480,11 @@ Applying the midpoint subscription price of USD 12.5/vehicle/month, the annual r
 
 \subsection{Serviceable Addressable Market (SAM) Estimation}
 Not all TAM carriers are immediately addressable. Based on the assumptions in Section 1.3 and 3.2, we exclude carriers that:
-•	Operate primarily intrastate with no interstate authority (less likely to invest in advanced telematics).
-•	Are not multi-brand (single-brand fleets may prefer OEM-locked solutions like Bosch) .
-•	Lack existing telematics or OBD-II data access (our solution assumes sensor data is already available or can be installed with minimal overhead) .
+\begin{itemize}
+    \item Operate primarily intrastate with no interstate authority (less likely to invest in advanced telematics).
+    \item Are not multi-brand (single-brand fleets may prefer OEM-locked solutions like Bosch).
+    \item Lack existing telematics or OBD-II data access (our solution assumes sensor data is already available or can be installed with minimal overhead).
+\end{itemize}
 We estimate that 40\% of the TAM meets these criteria (multi-brand, digital-ready, budget authority for SaaS tools). Therefore:
 \begin{equation}
     \text{SAM} = \underbrace{1{,}612{,}000}_{\text{vehicles}} \times \underbrace{0.40}_{\text{proportion}} \approx 645{,}000 \text{ vehicles}
@@ -457,8 +503,10 @@ Given the early-stage nature of the venture (no proprietary large-scale dataset,
 \end{equation}  
 
 \subsection{Investment justification}
-The SOM of ~2.9 million USD/year by Year 3 represents a credible revenue base for an early-stage AI venture. Using ATRI benchmarks, repair and maintenance costs average USD 0.215/mile, or approximately USD 17,200/vehicle/year at 80,000 miles. A subscription priced at USD 108-192/vehicle/year would be economically viable even with conservative savings of 5-10\% on R\&M and 10-20\% on downtime, yielding a net benefit of approximately USD 770-2,500/vehicle/year (5-15× return on subscription cost), as assumed in the previous section. (da riguardare tutta questa parte? potremmo toglierla). 
-This implies that the customer lifetime value (LTV) significantly exceeds the customer acquisition cost (CAC) and onboarding expenses, satisfying the feasibility condition stated in Section 3.3 (LTV >> CAC, gross margin sufficient to finance model development). The market opportunity therefore justifies the investment and development effort required to launch the venture, provided that the pilot validation plan (15-30 customer discovery interviews, 3-6 month pilot with 50-100 vehicles) successfully confirms the assumed pain points and cost savings .
+The SOM of ~2.9 million USD/year by Year 3 represents a credible revenue base for an early-stage AI venture. Using ATRI benchmarks, repair and maintenance costs average USD 0.215/mile, or approximately USD 17,200/vehicle/year at 80,000 miles. A subscription priced at USD 108-192/vehicle/year would be economically viable even with conservative savings of 5-10\% on R\&M and 10-20\% on downtime, yielding a net benefit of approximately USD 770-2,500/vehicle/year (5-15× return on subscription cost), as assumed in the previous section. 
+\\
+\\ 
+This implies (customer liftime value) LTV » CAC (customer acquisition cost) and sufficient gross margin to fund model development. The market opportunity therefore justifies the initial investment, provided that the planned validation (15–30 interviews and a 3–6 month pilot with 50–100 vehicles) confirms the assumed pain points and cost savings.
 
 
 \begin{table}[h!]
@@ -499,10 +547,10 @@ SOM (Y3) & $\sim$300 & $\sim$19,350 & $\sim$2.9 M &
 \indent Two primary personas are defined to guide customer discovery, MVP design and pilot recruitment. Both personas are fictitious but representative of real decision-makers and users in the target segment.
 \subsubsection{Persona 1 - Fleet manager}
 \noindent \textbf{Name and profile:} Peter Parker, Fleet Manager at a regional logistics company operating 80 commercial vehicles.
-\noindent \textbf{Role:} Responsible for fleet availability, maintenance budget, on-time delivery performance and selection of operational tools. Approves or co-approves software expenditures for fleet management and maintenance.
-\noindent \textbf{Context:}  Manages a mixed fleet of 30-200 vehicles. Receives data from telematics providers, workshops and drivers, but often plans maintenance using fixed schedules and fragmented spreadsheets or legacy software.
-\vspace{1cm}
-\textbf{Goals:}
+\\ \noindent \textbf{Role:} Responsible for fleet availability, maintenance budget, on-time delivery performance and selection of operational tools. Approves or co-approves software expenditures for fleet management and maintenance.
+\\ \noindent \textbf{Context:}  Manages a mixed fleet of 30-200 vehicles. Receives data from telematics providers, workshops and drivers, but often plans maintenance using fixed schedules and fragmented spreadsheets or legacy software.
+\vspace{0.5cm}
+\\\textbf{Goals:}
 \begin{itemize}
     \item Minimize unplanned downtime and breakdown-related delivery delays.
     \item Make maintenance costs more predictable and reduce emergency repairs.
@@ -510,25 +558,23 @@ SOM (Y3) & $\sim$300 & $\sim$19,350 & $\sim$2.9 M &
     \item Justify technology investments to senior management with clear ROI.
 \end{itemize}
 
-\textbf{Frustrations:}
+\noindent \textbf{Frustrations:}
 \begin{itemize}
     \item Unexpected component failures (engine, transmission, battery) that disrupt operations.
     \item High and volatile repair costs, especially for urgent interventions.
     \item Lack of integrated, actionable insights from existing telematics or maintenance tools.
     \item Enterprise platforms perceived as too expensive, complex or tied to specific OEMs.
 \end{itemize}
-\vspace{0.8cm}
+\vspace{0.5cm}
 \noindent \textbf{Job-to-be-done:} “When I manage a mixed commercial fleet, I want to identify vehicles likely to fail before a breakdown occurs, so that I can schedule maintenance with minimal disruption and cost.”
-\vspace{0.4cm}
-\noindent \textbf{Decision power:} Can initiate a pilot or approve a low-cost SaaS subscription independently; larger investments require management or procurement approval. This aligns with the assumption in Section 1.3 that fleet managers in small-to-mid fleets hold sufficient operational budget authority to adopt a new SaaS tool without long corporate procurement processes.
+\\ \noindent \textbf{Decision power:} Can initiate a pilot or approve a low-cost SaaS subscription independently; larger investments require management or procurement approval. This aligns with the assumption in Section 1.3 that fleet managers in small-to-mid fleets hold sufficient operational budget authority to adopt a new SaaS tool without long corporate procurement processes.
 
 \subsubsection{Persona 2 - Maintenance manager/Workshop manager}
 \noindent \textbf{Name and Profile:} Steve Rogers, Maintenance Manager at a rental and logistics fleet with 120 vehicles.
-\noindent \textbf{Role:} Plans and coordinates all maintenance activities, manages internal technicians and external workshops, verifies anomalies, records repairs and downtime.
-\noindent \textbf{Context:} Handles competing priorities between scheduled maintenance and urgent repairs. Uses OBD data, GPS/telematics platforms, spreadsheets or dedicated fleet-maintenance software.
-
-\vspace{1cm}
-\textbf{Goals:}
+\\ \noindent \textbf{Role:} Plans and coordinates all maintenance activities, manages internal technicians and external workshops, verifies anomalies, records repairs and downtime.
+\\ \noindent \textbf{Context:} Handles competing priorities between scheduled maintenance and urgent repairs. Uses OBD data, GPS/telematics platforms, spreadsheets or dedicated fleet-maintenance software.
+\vspace{0.5cm}
+\\\textbf{Goals:}
 \begin{itemize} 
     \item Detect potential failures early enough to schedule interventions proactively.
     \item Reduce the number of emergency repairs and associated overtime costs.
@@ -542,15 +588,14 @@ SOM (Y3) & $\sim$300 & $\sim$19,350 & $\sim$2.9 M &
     \item Long and costly integration projects with existing systems.
     \item Complex dashboards that do not fit daily operational routines.
 \end{itemize}
-\vspace{0.8cm}
+\vspace{0.5cm}
 \noindent \textbf{Job-to-be-done:} “When the system detects a possible component failure, I want an understandable and actionable warning, so that I can inspect or service the right vehicle before it becomes unavailable.\newline
-
-\vspace{0.4cm}
+\\
 \noindent \textbf{Adoption condition:} Will actively use the system only if alerts are interpretable, prioritized and connected to concrete maintenance actions. This reflects the critical assumption in Section 3.2 that customers must perceive the reduction in downtime and unnecessary maintenance as greater than the subscription and implementation costs .\
 
 \subsection{Key hypotheses to validate}
 \noindent The market test focuses on the following hypotheses, which are directly derived from the problem definition, competitive positioning and business model described in Sections 1-3 :
-
+\\
 \begin{table}[h!]
 \centering
 \small
@@ -607,17 +652,17 @@ Validates economic impact promised in Section~2.5. \\
 \noindent The MVP will not include full fleet optimization or advanced analytics, but only the core predictive-maintenance functionality required to test hypotheses H3, H4 and H6.
 
 \subsubsection{Pilot Deployment}
-\noindent We will run a 3--6 month pilot with 2--3 fleet customers (50--100 vehicles in total). The pilot will compare maintenance performance before and after deployment using indicators such as unexpected failures per 10,000 miles, downtime hours per vehicle, emergency repair costs and false-positive rate of alerts. Success criterion: statistically significant improvement in at least two of these metrics (e.g., reduction in breakdowns and downtime) compared to the pre-pilot baseline, supporting hypothesis H6.
-
+\noindent We will run a 3--6 month pilot with 2--3 fleet customers (50--100 vehicles in total). The pilot will compare maintenance performance before and after deployment using indicators such as unexpected failures per 10,000 miles, downtime hours per vehicle, emergency repair costs and false-positive rate of alerts. 
+Success criterion: statistically significant improvement in at least two of these metrics (e.g., reduction in breakdowns and downtime) compared to the pre-pilot baseline, supporting hypothesis H6.
 \noindent All data collected during interviews, surveys and pilots will be anonymized and used solely for research and product development purposes. Customers will be informed about the experimental nature of the MVP and the limitations of the predictive model.
 
 \subsection{Learning and Decision-Making}
 \noindent The validation process is designed to generate clear signals and guide iterative development. Table~\ref{tab:hypothesis-signals} maps each hypothesis to success signals, failure signals and the corresponding decision.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \small
-\begin{tabularx}{\linewidth}{l X X X}
+\begin{tabularx}{\linewidth}{X X X X}
 \toprule
 \textbf{Hypothesis} & \textbf{Success signals} & \textbf{Failure signals} & \textbf{Decision} \\
 \midrule
@@ -659,13 +704,19 @@ Extend pilot duration, refine the model or reconsider the value proposition. \\
 \end{table}
 
 \subsubsection{Iterative Development Cycle}
-\noindent After each validation stage (interviews $\rightarrow$ survey $\rightarrow$ MVP $\rightarrow$ pilot), the team will review the evidence and decide whether to: (i) proceed to the next stage; (ii) iterate on the current stage (e.g., refine the model, adjust pricing, improve UX); or (iii) pivot to a different problem, segment or business model. Decisions will be documented and linked to specific data points to ensure transparency and traceability.
+\noindent After each validation stage (interviews $\rightarrow$ survey $\rightarrow$ MVP $\rightarrow$ pilot), the team will review the evidence and decide whether to: 
+\begin{itemize}
+    \item proceed to the next stage; 
+    \item iterate on the current stage (e.g., refine the model, adjust pricing, improve UX); 
+    \item or pivot to a different problem, segment or business model. 
+\end{itemize} 
+Decisions will be documented and linked to specific data points to ensure transparency and traceability.
 
 \subsubsection{Risk Management}
 \noindent If multiple hypotheses fail simultaneously (e.g., H1, H2 and H5), the venture will be considered not viable in the current form and a strategic pivot will be triggered. If only some hypotheses fail (e.g., H3 or H4), targeted iterations will be prioritized before re-testing.
-
-\noindent The validation metrics and decision rules described above provide the basis for the negative backcasting exercise in Section 6. In that analysis, we will assume that the venture has failed and trace backward through these signals to identify which hypotheses (H1-H6) were violated, what early warnings were missed and which mitigation actions could have prevented the failure. This disciplined pessimism complements the validation strategy by highlighting risks that must be monitored even if early tests are successful
-\section{Failure Analysis andRisk Mitigation}
+\\
+\\ The validation metrics and decision rules described above provide the basis for the negative backcasting exercise in Section 6. In that analysis, we will assume that the venture has failed and trace backward through these signals to identify which hypotheses (H1-H6) were violated, what early warnings were missed and which mitigation actions could have prevented the failure. This disciplined pessimism complements the validation strategy by highlighting risks that must be monitored even if early tests are successful
+\section{Failure Analysis and Risk Mitigation}
 \subsection{Scenario of Failure}
 \noindent Assume that by Year 3 the venture has:
 \begin{itemize}
@@ -678,7 +729,7 @@ Extend pilot duration, refine the model or reconsider the value proposition. \\
 
 \subsection{Common Failure Causes}
 
-\subsubsection{C1 -- Weak Problem--Solution Fit (H1 violated)}
+\subsubsection{C1 -- Weak Problem-Solution Fit (H1 violated)}
 \noindent Fleet managers did not perceive unplanned downtime and reactive maintenance as sufficiently painful or costly. Many considered existing practices (fixed-interval maintenance, ad-hoc repairs) acceptable, especially in smaller fleets with tight budgets. As a result, demand for a predictive-maintenance SaaS tool was lower than expected.
 
 \subsubsection{C2 -- Inadequate Differentiation versus Existing Solutions (H2 violated)}
@@ -697,12 +748,17 @@ Extend pilot duration, refine the model or reconsider the value proposition. \\
 \noindent Pilots did not produce statistically significant improvements in breakdowns, downtime or R\&M costs. In some cases, results were inconsistent across fleets or vehicle types, making it difficult to generalize the value proposition.
 
 \subsubsection{C7 -- Strategic and Regulatory Risks}
-\noindent Additional failure paths include: (i) misalignment with broader industry trends (e.g., rapid shift to electric vehicles with different failure modes); (ii) emergence of new regulations on AI in automotive contexts that increase compliance costs; (iii) dependence on third-party telematics providers that change pricing or API access terms.
+\noindent Additional failure paths include: 
+\begin{itemize}
+    \item misalignment with broader industry trends (e.g., rapid shift to electric vehicles with different failure modes);
+    \item emergence of new regulations on AI in automotive contexts that increase compliance costs; 
+    \item dependence on third-party telematics providers that change pricing or API access terms.
 
+\end{itemize}
 \subsection{Early Warning Signals and Mitigation Actions}
 \noindent For each failure cause, we identify early warning signals that can be monitored during validation and corresponding mitigation actions. Table~\ref{tab:failure-mitigation} summarizes this mapping.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \small
 \begin{tabularx}{\linewidth}{l X X}
@@ -728,11 +784,11 @@ Redesign UX with direct input from maintenance managers; add explainability (e.g
 
 C5 (low willingness to pay) &
 Most interviewees reject the proposed price range; requests for free tiers or heavy discounts. &
-Test alternative pricing models (per-fleet flat fee, tiered pricing, outcome-based contracts); reduce costs to enable lower prices; focus on higher-value segments less price-sensitive. \\
+Test alternative pricing models (per-fleet flat fee, tiered pricing); reduce costs to enable lower prices; focus on higher-value segments less price-sensitive. \\
 
 C6 (no measurable impact) &
 Pilots show no consistent reduction in breakdowns or costs; high variance across fleets. &
-Extend pilot duration; refine model features and thresholds; segment by vehicle type and operating conditions; consider hybrid models (predictive + scheduled maintenance). \\
+Extend pilot duration; refine model features and thresholds; consider hybrid models (predictive + scheduled maintenance). \\
 
 C7 (strategic/regulatory risks) &
 New regulations on AI in transportation; key telematics partners change API terms or pricing. &
@@ -745,7 +801,7 @@ Monitor regulatory developments; diversify data sources; maintain flexibility to
 \end{table}
 
 \subsection{Strategic Thinking Benefits}
-\noindent The negative backcasting exercise highlights several important insights:
+\noindent The negative backcasting  highlights several important insights:
 \begin{itemize}
     \item \textbf{Disciplined pessimism.} By assuming failure, the team is forced to confront uncomfortable scenarios that might otherwise be ignored in an optimistic business plan.
     \item \textbf{Prioritization of risks.} The analysis reveals which hypotheses (H1, H5, H6) are most critical to venture viability and should therefore receive the greatest attention during validation.
@@ -754,6 +810,35 @@ Monitor regulatory developments; diversify data sources; maintain flexibility to
 \end{itemize}
 \noindent In summary, negative backcasting does not predict that the venture will fail, but rather strengthens the project by making risks visible, measurable and manageable from the outset. 
 
+\section{Conclusion}
+
+This paper outlines an AI-driven venture for predictive maintenance in small-to-mid commercial fleets. The proposed solution targets a concrete operational problem (unplanned downtime and reactive maintenance) with a lightweight, hardware-agnostic SaaS model designed for multi-brand fleets that lack the resources for proprietary systems. The business model, market sizing and machine-learning pipeline are internally consistent, but all key claims about customer adoption, economic impact and competitive advantage remain hypotheses to be validated.
+\\
+\\ The venture’s viability therefore depends on the planned validation activities (customer discovery interviews, MVP and controlled pilot) confirming that the service delivers measurable reductions in downtime and maintenance costs at an acceptable price. If these hypotheses hold, the venture has the potential to become a scalable, economically sustainable business in the automotive aftermarket.
+
+\newpage
+\section*{References}
+
+\begin{enumerate}
+    \item American Transportation Research Institute (ATRI). \emph{An Analysis of the Operational Costs of Trucking: 2025 Update}. Arlington, VA, 2025.
+    
+    \item Federal Motor Carrier Safety Administration (FMCSA). \emph{Company Census Dataset} (az4n-8mr2), updated August 2026. Available at: \url{https://data.fmcsa.dot.gov}.
+    
+    \item European Parliament and Council. \emph{Regulation (EU) 2024/... on Artificial Intelligence (AI Act)}. Official Journal of the European Union, 2024.
+    
+    \item Carly Enterprise. \emph{Carly Platform Documentation}. Available at: \url{https://www.carly.ai}.
+    
+    \item SteerAI. \emph{SteerAI Platform Overview}. Available at: \url{https://www.steerai.com}.
+    
+    \item Bosch. \emph{Bosch Predictive Diagnostics – Product Information}. Available at: \url{https://www.bosch-mobility.com}.
+    
+    \item NASA. \emph{Turbofan Engine Degradation Simulation Data Set}. NASA Prognostics Data Repository, 2008.
+    \item U.S. Patent Application US20190066407A1, “Real-time OBD and sensor-data analysis…”, 2019.
+    \item U.S. Patent US12093901B2, “Telematics-based vehicle-component health assessment…”, 2024.
+    \item U.S. Patent Application US20230315082A1, “Predictive maintenance of road-vehicle components”, 2023.
+    \item European Patent Application EP4379486A1, “Resource-efficient predictive maintenance for fleets…”, 2024.
+
+\end{enumerate}
 
 
 \end{document}
